@@ -28,7 +28,7 @@ function App ()
 
                         return (
                             <li key={spacePhenomenon.id}>
-                                {spacePhenomena.emoji} {spacePhenomenon.name} {observationStatus}
+                                {spacePhenomenon.emoji} {spacePhenomenon.name} {observationStatus}
                                 {randomIndex === 2 && <span>⚡️ (Bring your best gear!)</span>} 
                             </li>
                         )
