@@ -25,7 +25,8 @@ function InventoryItem ({name, type, quantity=0, price=0})
 				totalValue > valueThreshold
 				&&
 				<Message>
-					<p style={{color:"orange",fontStyle:"italic"}}><span>💸</span> High value - extra protection needed </p>
+					<p style={{color:"orange",fontStyle:"italic"}}>
+				<span>💸</span> High value - extra protection needed </p>
 				</Message>
 
 			}
