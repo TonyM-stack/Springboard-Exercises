@@ -15,7 +15,7 @@ function App ()
        // TODO: Render each inventory item as a list item. 
 	return (
 		<div>
-			<h1>Inventory</h1>
+			<h1 style={{fontFamily:"Courier", textAlign:"center", textTransform:"uppercase"}}>Inventory</h1>
 			<ol>
 			{
                 inventoryItems.map((item, index) => (
