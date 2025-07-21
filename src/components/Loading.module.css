@@ -1,0 +1,45 @@
+/* .fullScreenLoader { 
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+  background-color: rgb(6, 6, 6); 
+  color: limegreen;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2rem; 
+  z-index: 1000;
+}   */
+
+.fullScreenLoader {
+  background-color: rgba(0, 0, 0, 0.85);
+  border: 4px solid lime;
+  color: white;
+  font-size: 2rem;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+
+.gear {
+  font-size: 5rem;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+/* Animation */
+@keyframes spin {
+   0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+
+}

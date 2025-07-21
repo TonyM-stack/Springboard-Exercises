@@ -1,0 +1,45 @@
+.container {
+    padding: 1rem 8rem;
+    background-color: #000f1c;
+    color: #ffffff;
+    font-family: 'Courier New', monospace;
+    line-height: 1.6;
+}
+
+/* .navBar {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.navButton {
+    background-color: #111;
+    color: white;
+    border:  1px solid white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+} */
+
+.heading {
+    color: yellow;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0rem;
+}
+
+.section {
+    background-color: rgb(2, 31, 56);
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.sectionHeading {
+    font-size: 1.3rem;
+    margin-bottom: 0rem;
+    color: rgb(245, 244, 248)
+}

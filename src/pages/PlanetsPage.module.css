@@ -1,0 +1,131 @@
+.container {
+    padding: 1rem 8rem;
+    background-color: #000f1c;
+    color: #ffffff;
+    font-family: 'Courier New', monospace;
+    line-height: 1.6;
+}
+
+.planetName {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: rgb(245, 244, 248);
+    text-align: center;
+}
+
+.pop {
+    font-size: 1rem;
+    color: rgb(245, 244, 248);
+    margin: 0.5rem 0;
+}
+
+.stationed {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    align-items: flex-start;
+    justify-content: flex-start;
+    white-space: nowrap;
+    max-width: 300px;
+    font-size: 1.5rem;
+    color: rgb(245, 244, 248);
+}
+
+ .dispatchh4 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    color: rgb(245, 244, 248);
+} 
+
+.list {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    background-color: #000f1c;
+   /*  border: 1px solid white; */
+    border-radius: 10px;      
+}
+
+.list:empty {
+  display: none;
+}
+
+
+.listItem {
+  flex: 1; 
+  text-align: center;       
+  /* width: 120px;  */         /* fixed width for each item */
+  /* display: inline-flex; */   /* inline‑level flex if you want to align children */
+  margin: 0 0.25rem; /* space between items */
+  padding: 0.5rem .5rem; 
+  border: 1px solid white;
+  border-radius: 9999px; /* pill shape */
+  color: rgb(245, 244, 248);
+}
+
+/* Planet card becomes a two‑column flex container */
+.planetCard {
+  display: flex;
+  align-items: stretch;  
+  gap: 2rem;                /* space between planet & details */
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem auto;
+  width:60%;
+ /*  height:min-content; */
+}
+
+/* Left column stacks the planet info */
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/* Right column grows to fill the rest */
+.detailWrapper { 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  gap: 0rem;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+
+.dispatchSection {
+  margin-top: 10%; /* push to bottom of detailWrapper */ 
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap:wrap;
+  justify-content: flex-start; 
+  align-items: center; 
+  align-self: auto;
+  gap: .5rem;             /* space between header and buttons */
+}
+
+
+/* Tweak your existing classes */
+.imageWrapper,
+.summary img {
+  margin-bottom: 1rem;
+}
+
+
+
+
+ 
+
+

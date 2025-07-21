@@ -1,0 +1,22 @@
+ *      /*Universal Selector - Sets a universal margin, padding, font etc */
+{
+  box-sizing: border-box;
+  align-items: center;
+  background-color: #000f1c;
+  margin: 0;
+  /* padding: 2rem 2 rem; */
+
+}
+
+body
+{
+  width: 100vw;
+  height: 100vh;
+}
+
+h1,
+p
+{
+  margin-bottom: 20px;
+}
+
