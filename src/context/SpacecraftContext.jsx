@@ -106,6 +106,7 @@ async function sendSpacecraftToPlanet(spacecraftId, targetPlanetId) {
   return (
     <SpacecraftContext.Provider value={{ 
         planets,
+        setSpacecrafts,
         spacecrafts,
           loading,
            error,
