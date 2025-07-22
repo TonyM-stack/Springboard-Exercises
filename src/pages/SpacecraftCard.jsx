@@ -5,6 +5,7 @@ import SpaceTravelApi from "../services/SpaceTravelApi";
 import Loading from "../components/Loading";
 import Button from "../components/Button";
 import styles from "./SpacecraftCard.module.css";
+import React from "react";
 
 export default function SpacecraftCard() {
   const { id } = useParams();
