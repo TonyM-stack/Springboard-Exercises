@@ -1,11 +1,57 @@
 import styles from "./HomePage.module.css";
+import { useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
+import Loading from "../components/Loading";
+import { useSpacecrafts } from "../context/SpacecraftContext";
 
 
 function HomePage() 
 {
+      const location = useLocation();
+      const [pageLoading, setPageLoading] = useState(true);
+      const [dispatching, setDispatching] = useState(null); // Hook for dispatching state lifted above all returns
+      const {state} = location;
+      
+       const { 
+            spacecrafts,
+             setSpacecrafts,
+              loading,
+               error,
+               destroySpacecraft,
+               clearError,
+               fetchAll 
+               } = useSpacecrafts(); // Using the context to access spacecrafts
+
+      useEffect(() => {
+              clearError();
+               setPageLoading(true); 
+
+       fetchAll()
+          .catch((e) => {
+           console.error("fetchAll failed on route change:", e);
+         })
+           .finally(() => {
+            setPageLoading(false);
+            console.log("👉 pageLoading now false, home:");
+           });
+
+          }, [location.pathname]); // Re-fetch when the route changes
+
+  if (pageLoading) {
+    return <Loading />;   // ← now you really will see it
+  }
+
+  if (error)  { 
+    return <p className="error">{error}</p>;
+  }
     console.log("HomePage rendering");
   return (
     <div className={styles.container}>
+
+       {state?.flash && (
+        <div className = {styles.flashMessage}>{state.flash}</div>
+      )}
+
       <h1 className={styles.heading}>Space Travel: Expanding Horizons Beyond Earth</h1>
          <h2 className={styles.sectionHeading}>
           <span style={{ fontSize: "3rem"}}>👨‍🚀</span>  Journey Into The Future</h2>
@@ -41,6 +87,9 @@ function HomePage()
           within our solar system.   Seamlessly navigate your fleet of spacecraft, hurtling through the cosmic void from 
           one celestial body to another. The universe becomes your playground, and every planet a potential home.
         </p>
+         
+        
+  );
 
     </div>
   );

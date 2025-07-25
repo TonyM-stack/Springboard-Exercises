@@ -8,42 +8,6 @@
   background-color: #000f1c;
 }
 
- /* .loading {
-  text-align: center;
-  font-family: 'Courier New', monospace;
-  margin-top: 2rem;
-  color: limegreen;
-  font-size: 1.2rem;
-} 
 
-.fullScreenLoader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  background-color: black; /* optional: match your theme */
-  /* color: limegreen;
-  font-family: 'Courier New', monospace;
-  z-index: 1000;
-}
-
- .gear {
-  font-size: 4rem;
-  animation: spin 1s linear infinite;
-  margin-bottom: 1rem;
-}
-
-/* Animation */
-/* @keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}  */ 
 

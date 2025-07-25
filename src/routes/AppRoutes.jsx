@@ -4,15 +4,16 @@ import SpacecraftsPage from "../pages/SpacecraftsPage";
 import BuildPage from "../pages/BuildPage";
 import PlanetsPage from "../pages/PlanetsPage";
 import { SpacecraftProvider, useSpacecrafts } from "../context/SpacecraftContext";
-import Loading from "../components/Loading";
+// import Loading from "../components/Loading";
 import SpacecraftCard from "../pages/SpacecraftCard";
 
-function AppRoutes() {
-    const { loading } = useSpacecrafts();
 
-    if (loading) {
-        return <Loading />;
-    }
+function AppRoutes() {
+    // const { loading } = useSpacecrafts();
+
+    // if (loading) {
+    //     return <Loading />;
+    // }
 
   return (
     <Routes>
@@ -28,7 +29,10 @@ function AppRoutes() {
           <Route path="/planets" element={<PlanetsPage />} /> 
     
             {/* Redirect any unknown routes to HomePage */} 
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="*" element={ <Navigate
+      to="/"
+      replace
+      state={{ flash: "Page not found. You’ve been sent home." }}/>} />
 
           <Route path="/spacecrafts/:id"
             element={<SpacecraftCard />}

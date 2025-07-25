@@ -1,6 +1,7 @@
-import SpaceTravelMockApi from "./SpaceTravelMockApi.js";
+import {nanoid} from "nanoid";
+import { SpaceTravelMockApi } from "./SpaceTravelMockApi.js";
 
-class SpaceTravelApi
+export default class SpaceTravelApi
 {
   static async getPlanets ()
   {
@@ -32,7 +33,3 @@ class SpaceTravelApi
     return SpaceTravelMockApi.sendSpacecraftToPlanet({spacecraftId, targetPlanetId});
   }
 }
-
-SpaceTravelApi.resetMockDb = SpaceTravelMockApi.resetMockDb;
-
-export default SpaceTravelApi;

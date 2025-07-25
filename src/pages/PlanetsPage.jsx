@@ -4,51 +4,55 @@ import SpaceTravelApi from "../services/SpaceTravelApi";
 import Loading from "../components/Loading";
 import Button from "../components/Button"; 
 import { useSpacecrafts } from "../context/SpacecraftContext";
+import { useLocation } from "react-router-dom";
 
 export default function PlanetsPage() {
+    const location = useLocation();
+   
     const { 
         spacecrafts, 
-        loading,
+        loading, 
         planets,
         error,
-        sendSpacecraftToPlanet: dispatchSpacecraft,
-        
+        clearError,
+        fetchAll, 
+        sendSpacecraftToPlanet: dispatchSpacecraft,   
     } = useSpacecrafts();
+     
+     const [pageLoading, setPageLoading] = useState(true);
+     const [dispatching, setDispatching] = useState(null); // Hook for dispatching state lifted above all returns
 
-    const [dispatching, setDispatching] = useState(null);
+  //  on mount *and* any time the route changes,
+  // clear any error and re‐fetch both planets & crafts
+  useEffect(() => {
+    clearError();
+    setPageLoading(true); 
 
-    if (loading) return <Loading />; 
-    if (error) return <p className={styles.error}>{error}</p>;
+    fetchAll()
+      .catch((e) => {
+        console.error("fetchAll failed on route change:", e);
+      })
+      .finally(() => {
+        setPageLoading(false);
+            console.log("👉 pageLoading now false, planets:", planets);
+           });
 
-//  useEffect(() => {
-//     async function fetchData() {
-        
-//       const [planetRes, craftRes] = await Promise.all([
-//         SpaceTravelApi.getPlanets(),
-//         SpaceTravelApi.getSpacecrafts(),
-//       ]);
-//       console.log("🌍 planets:", planetRes.data);
-//       console.log("🚀 spacecrafts:", craftRes.data);
-//       if (!planetRes.isError && !craftRes.isError) {
-//         setPlanets(planetRes.data);
-//         setSpacecrafts(craftRes.data);
-//       }
-//       setLoading(false);
-//     }
-//     fetchData();
-//   }, []);
+  }, [location.pathname]); // Re-fetch when the route changes
 
-//     async function handleDispatch(spacecraftId, targetPlanetId) {
-//     setDispatching(spacecraftId);
-//     const response = await SpaceTravelApi.sendSpacecraftToPlanet({ spacecraftId, targetPlanetId });
-//     if (!response.isError) {
-//       const refreshedCrafts = await SpaceTravelApi.getSpacecrafts();
-//       if (!refreshedCrafts.isError) setSpacecrafts(refreshedCrafts.data);
-//     }
-//     setDispatching(null);
-//   }
+  if (pageLoading) {
+    return <Loading />;   // ← now you really will see it
+  }
 
-//   if (loading) return <Loading />;
+  if (error)  { 
+    return <p className="error">{error}</p>;
+  }
+
+  async function handleDispatch(sId, pId) {
+    setDispatching(sId);
+    await dispatchSpacecraft({ spacecraftId: sId, targetPlanetId: pId });
+    setDispatching(null);
+  }
+   
 
    return (
     <div className={styles.container}>
@@ -66,7 +70,6 @@ export default function PlanetsPage() {
             {/* Right column: Details and dispatch section */}
           <div className={styles.detailWrapper}>
                 {/*   Stationed Spacecrafts */}
-                
                     <h3 className={styles.stationed}>Stationed Spacecrafts:</h3>
                      <ul className={styles.list}> 
                       {spacecrafts.filter(s => s.currentLocation === Number(planet.id))
@@ -85,11 +88,9 @@ export default function PlanetsPage() {
               <Button
                 key={s.id}
                 variant="dispatchButton"
-                disbled={dispatching === s.id}
-                onClick={async () => {
-                    setDispatching(s.id,)
-                await dispatchSpacecraft(s.id, planet.id);
-                setDispatching(null);
+                disabled={dispatching === s.id}
+                onClick={() => {
+                  handleDispatch(s.id, planet.id);
                 }}
               >
                 {dispatching === s.id ? "Dispatching..." : `Send ${s.name}`}

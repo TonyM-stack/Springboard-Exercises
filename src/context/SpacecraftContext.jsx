@@ -1,29 +1,34 @@
 import { createContext, useContext, useState, useEffect} from "react";
 import SpaceTravelApi from "../services/SpaceTravelApi"; 
-import SpaceTravelMockApi from "../services/SpaceTravelMockApi";  
+// import { use } from "react";
+import {SpaceTravelMockApi} from "../services/SpaceTravelMockApi"; 
 
+// Context for managing planets and spacecraft data
 export const SpacecraftContext = createContext();
 
 export function SpacecraftProvider({ children }) {
+   // ---------- Data State ----------
   const [spacecrafts, setSpacecrafts] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error,setError] = useState(null);
   const [planets, setPlanets] = useState([]);  
+  // ---------- Loading State ----------
+  const [loading, setLoading] = useState(true);
 
-    // function clearError() {
-    //     setError(null);
-    // }
- useEffect(() => {
-  SpaceTravelMockApi.resetMockDb();
+  // ---------- Error State ----------
+  const [error,setError] = useState(null);
+  
+ // on mount: seed DB and load data
+  useEffect(() => {
+    SpaceTravelMockApi.resetMockDb()
+    fetchAll();
+  }, []);
 
   async function fetchAll() {
+    console.log("fetchAll start")
     setError(null);
     setLoading(true);
 
-    // optional: simulate 1s delay before the fetch
-    await new Promise(r => setTimeout(r, 1000));
-
     try {
+      // console.log("📡 fetching planets & crafts…") 
       // fetch planets & spacecrafts in parallel
       const [planetRes, craftRes] = await Promise.all([
         SpaceTravelApi.getPlanets(),
@@ -33,43 +38,51 @@ export function SpacecraftProvider({ children }) {
       if (planetRes.isError || craftRes.isError) {
         throw new Error("Fetch failed");
       }
-
+      //  console.log("✅ got data", planetRes, craftRes)
       // NOW inside the try block, update both pieces of state
-      setPlanets(planetRes.data);
-      setSpacecrafts(craftRes.data);
+      // setPlanets(planetRes.data);
+      // setSpacecrafts(craftRes.data);
+      setPlanets(planetRes.data  ?? []);
+      setSpacecrafts(craftRes.data ?? []);
 
     } catch (err) {
       console.error("Error loading data:", err);
       setError(err.message);
     } finally {
+       console.log("🏁 fetchAll done – clearing loading")
       setLoading(false);
     }
   }
 
-  fetchAll();
-}, []);
-
-
-async function sendSpacecraftToPlanet(spacecraftId, targetPlanetId) {
+  // Expect a single object with { spacecraftId, targetPlanetId }
+async function sendSpacecraftToPlanet({spacecraftId, targetPlanetId}) {
+    // 🚀 DEBUG: log exactly what the context is passing in
+  console.log(  "⚙️ Context calling sendSpacecraftToPlanet with:",   { spacecraftId, targetPlanetId });
   setError(null);
-  // 1) tell the mock to move the ship and update populations
-  const res = await SpaceTravelApi.sendSpacecraftToPlanet({ spacecraftId, targetPlanetId });
-  if (res.isError) {
-    setError(res.data.message);
-    return;
-  }
+  setLoading(true); 
+  try { 
+    const res = await SpaceTravelApi.sendSpacecraftToPlanet({
+       spacecraftId,
+       targetPlanetId
+  });
 
-  // 2) now re-fetch **both** lists in parallel
-  try {
-    const [planetRes, craftRes] = await Promise.all([
-      SpaceTravelApi.getPlanets(),
-      SpaceTravelApi.getSpacecrafts(),
-    ]);
-    if (!planetRes.isError)   setPlanets(planetRes.data);
-    if (!craftRes.isError)     setSpacecrafts(craftRes.data);
-  } catch {
-    setError("Failed to refresh after dispatch");
-  }
+  if (res.isError) {
+    setError(res.data?.message ?? "Failed to send spacecraft");
+    
+  } else if (!res.data) {
+    setError("No data returned from the mock API.");
+    
+  } else { 
+       const { planets: updatedPlanets, spacecrafts: updatedCrafts } = res.data;
+       setPlanets(updatedPlanets);
+       setSpacecrafts(updatedCrafts);
+      }
+  } catch (err) {
+    console.error("Error sending spacecraft:", err);
+    setError(err.message);
+  } finally {
+    setLoading(false);
+  } 
 }
 
 
@@ -77,25 +90,27 @@ async function sendSpacecraftToPlanet(spacecraftId, targetPlanetId) {
   async function destroySpacecraft(id) {
     console.log("context.destroySpacecraft()",id);
     setError(null);
-    // call the mock API
-    const response = await SpaceTravelApi.destroySpacecraftById({ id });
-    console.log("API response", response);
+    setLoading(true);
+    try { 
+    const res = await SpaceTravelApi.destroySpacecraftById({ id });
+    console.log("API response", res);
 
-    if (response.isError) {
+    if (res.isError) {
       // surface the mock’s error message
-      setError(response.data.message);
-      return;
-    }
-
-     try {
-      const [planetRes, craftRes] = await Promise.all([
-        SpaceTravelApi.getPlanets(),
-        SpaceTravelApi.getSpacecrafts(),
-      ]);
-      if (!planetRes.isError)   setPlanets(planetRes.data);
-      if (!craftRes.isError)     setSpacecrafts(craftRes.data);
-    } catch {
-      setError("Failed to refresh after delete");
+      setError(res.data?.message ?? "Failed to destroy spacecraft");
+      
+    } else if (!res.data) {
+      setError("No data returned from the mock API.");
+    } else { 
+        const { planets: updatedPlanets, spacecrafts: updatedCrafts } = res.data;
+        setPlanets(updatedPlanets);
+        setSpacecrafts(updatedCrafts);
+      }
+    } catch (err) {
+      console.error("Error in destroySpacecraft:", err);
+      setError(err.message);
+    } finally {
+      setLoading(false);
     }
   }
 
@@ -104,15 +119,17 @@ async function sendSpacecraftToPlanet(spacecraftId, targetPlanetId) {
   }
 
   return (
-    <SpacecraftContext.Provider value={{ 
-        planets,
-        setSpacecrafts,
-        spacecrafts,
-          loading,
+    <SpacecraftContext.Provider 
+       value={{ 
+           planets,
+           setSpacecrafts,
+           spacecrafts,
+           loading,
            error,
+           fetchAll, 
            destroySpacecraft,
            sendSpacecraftToPlanet,
-           clearError
+           clearError,
          }}
            >
       {children}

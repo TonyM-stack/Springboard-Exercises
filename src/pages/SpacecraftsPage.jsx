@@ -7,26 +7,52 @@ import SpacecraftCard from "../pages/SpacecraftCard";
 import Loading from "../components/Loading";
 import Button from "../components/Button";
 import { useSpacecrafts } from "../context/SpacecraftContext";
+import { useLocation } from "react-router-dom";
 
 
 export default function SpacecraftsPage() {
+   const location = useLocation();
+
     const { 
       spacecrafts,
        setSpacecrafts,
         loading,
          error,
          destroySpacecraft,
-         clearError
+         clearError,
+         fetchAll 
          } = useSpacecrafts(); // Using the context to access spacecrafts
 
-         useEffect(() => {
-          clearError();
-         }, []);
+     const [pageLoading, setPageLoading] = useState(true);
+     const [dispatching, setDispatching] = useState(null); // Hook for dispatching state lifted above all returns
+
+      useEffect(() => {
+              clearError();
+               setPageLoading(true); 
+
+       fetchAll()
+          .catch((e) => {
+           console.error("fetchAll failed on route change:", e);
+         })
+           .finally(() => {
+            setPageLoading(false);
+            console.log("👉 pageLoading now false, spacecrafts:", spacecrafts);
+           });
+
+          }, [location.pathname]); // Re-fetch when the route changes
+
+  if (pageLoading) {
+    return <Loading />;   // ← now you really will see it
+  }
+
+  if (error)  { 
+    return <p className="error">{error}</p>;
+  }
     
     console.log("SpacecraftsPage rendering with spacecrafts:", spacecrafts); // Debug log
     // const [spacecraftsList, setSpacecraftsList] = useState([]); // State to hold the list of spacecrafts
 
-     console.log("loading status:", loading); // Debug log to check loading status
+    console.log("loading status:", loading); // Debug log to check loading status
       if (loading) return <Loading />; // Show loading spinner while fetching data
  
 

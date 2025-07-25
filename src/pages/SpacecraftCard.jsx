@@ -6,6 +6,7 @@ import Loading from "../components/Loading";
 import Button from "../components/Button";
 import styles from "./SpacecraftCard.module.css";
 import React from "react";
+import { useSpacecrafts } from "../context/SpacecraftContext";
 
 export default function SpacecraftCard() {
   const { id } = useParams();
@@ -13,6 +14,7 @@ export default function SpacecraftCard() {
   const [craft, setCraft] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const { destroySpacecraft } = useSpacecrafts();
 
   useEffect(() => {
     async function load() {
@@ -57,6 +59,15 @@ export default function SpacecraftCard() {
           <p className={styles.description}>
             {craft.description}
           </p>
+           <Button
+                  onClick={() => {
+                    console.log("Destroy button clicked for", craft.id);
+                    destroySpacecraft(craft.id);
+                  }}
+                  variant="destroyButton"
+                >
+                  Destroy
+                </Button>
         </div>
       </div>
     </div>

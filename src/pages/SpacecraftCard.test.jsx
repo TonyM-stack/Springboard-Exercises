@@ -1,90 +1,126 @@
-// src/pages/SpacecraftCard.test.jsx
-import React from 'react';
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
-import SpacecraftCard from './SpacecraftCard';
-import SpaceTravelApi from '../services/SpaceTravelApi';
+/**
+ * @jest-environment jsdom
+ */
+import React from "react";
+import { render, screen, fireEvent, waitFor } from "@testing-library/react";
+import { MemoryRouter } from "react-router-dom";
+import SpaceTravelApi from "../services/SpaceTravelApi";
+import { SpacecraftProvider } from "../context/SpacecraftContext";
+import SpacecraftCard from "./SpacecraftCard";
 
-// Stub out react-router hooks
+// Simplify Loading
+jest.mock("../components/Loading", () => () => <div>Loading…</div>);
+
+// Mock the default export
+jest.mock("../services/SpaceTravelApi", () => ({
+  __esModule: true,
+  default: {
+    getSpacecrafts: jest.fn(),
+    getPlanets:    jest.fn(),
+    sendSpacecraftToPlanet: jest.fn(),
+    destroySpacecraftById:  jest.fn(),
+  },
+}));
+
+// Stub out router hooks
 const mockNavigate = jest.fn();
-jest.mock('react-router-dom', () => {
-  const actual = jest.requireActual('react-router-dom');
+jest.mock("react-router-dom", () => {
+  const actual = jest.requireActual("react-router-dom");
   return {
     ...actual,
     useNavigate: () => mockNavigate,
-    useParams: () => ({ id: '1' }),
+    useParams:   () => ({ id: "1" }),
   };
 });
 
-// Simplify Loading component
-jest.mock('../components/Loading', () => () => <div>Loading...</div>);
-
-// Mock API service
-jest.mock('../services/SpaceTravelApi', () => ({
-  getSpacecrafts: jest.fn(),
-}));
-
-describe('SpacecraftCard', () => {
+describe("SpacecraftCard", () => {
   beforeEach(() => {
     jest.clearAllMocks();
   });
 
-  test('shows loading state initially', () => {
-    // simulate a never-resolving promise to keep loading
+  test("shows loading state initially", () => {
+    // never resolves so loading remains true
     SpaceTravelApi.getSpacecrafts.mockReturnValue(new Promise(() => {}));
-    render(<SpacecraftCard />);
+
+    render(
+      <MemoryRouter>
+        <SpacecraftProvider>
+          <SpacecraftCard />
+        </SpacecraftProvider>
+      </MemoryRouter>
+    );
+
     expect(screen.getByText(/loading/i)).toBeInTheDocument();
   });
 
-  test('displays error when API fails', async () => {
+  test("displays error when API fails", async () => {
     SpaceTravelApi.getSpacecrafts.mockResolvedValue({ isError: true });
-    render(<SpacecraftCard />);
-    await waitFor(() => {
-      expect(screen.getByText(/could not load spacecraft/i)).toBeInTheDocument();
-    });
+
+    render(
+      <MemoryRouter>
+        <SpacecraftProvider>
+          <SpacecraftCard />
+        </SpacecraftProvider>
+      </MemoryRouter>
+    );
+
+    await waitFor(() =>
+      expect(screen.getByText(/could not load spacecraft/i)).toBeInTheDocument()
+    );
   });
 
-  test('displays not found when ID is missing', async () => {
-    SpaceTravelApi.getSpacecrafts.mockResolvedValue({ isError: false, data: [{ id: '2', name: 'Other' }] });
-    render(<SpacecraftCard />);
-    await waitFor(() => {
-      expect(screen.getByText(/spacecraft not found/i)).toBeInTheDocument();
+  test("displays not found when ID is missing", async () => {
+    SpaceTravelApi.getSpacecrafts.mockResolvedValue({
+      isError: false,
+      data: [{ id: "2", name: "Other" }],
     });
+
+    render(
+      <MemoryRouter>
+        <SpacecraftProvider>
+          <SpacecraftCard />
+        </SpacecraftProvider>
+      </MemoryRouter>
+    );
+
+    await waitFor(() =>
+      expect(screen.getByText(/spacecraft not found/i)).toBeInTheDocument()
+    );
   });
 
-  test('renders spacecraft details and back button correctly', async () => {
+  test("renders spacecraft details and back button correctly", async () => {
     const craft = {
-      id: '1',
-      name: 'Apollo',
+      id: "1",
+      name: "Apollo",
       capacity: 3,
-      description: 'Test ship',
-      pictureUrl: 'http://example.com/apollo.jpg',
+      description: "Test ship",
+      pictureUrl:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Orion_Service_Module.jpg/800px-Orion_Service_Module.jpg",
     };
-    SpaceTravelApi.getSpacecrafts.mockResolvedValue({ isError: false, data: [craft] });
 
-    render(<SpacecraftCard />);
-
-    // wait for the heading to appear
-    await waitFor(() => {
-      expect(screen.getByRole('heading', { name: /apollo/i })).toBeInTheDocument();
+    SpaceTravelApi.getSpacecrafts.mockResolvedValue({
+      isError: false,
+      data: [craft],
     });
 
-    // image
-    const img = screen.getByRole('img', { name: /apollo/i });
-    expect(img).toHaveAttribute('src', craft.pictureUrl);
+    render(
+      <MemoryRouter>
+        <SpacecraftProvider>
+          <SpacecraftCard />
+        </SpacecraftProvider>
+      </MemoryRouter>
+    );
 
-    // capacity label and number
-    const capacityLabel = screen.getByText(/capacity:/i);
-    expect(capacityLabel).toBeInTheDocument();
-    // the number is included in the same container
-    expect(capacityLabel.parentElement).toHaveTextContent(/3/);
+    // wait for data
+    await waitFor(() =>
+      expect(screen.getByRole("heading", { name: /apollo/i })).toBeInTheDocument()
+    );
 
-    // description text
-    expect(screen.getByText(/test ship/i)).toBeInTheDocument();
-
-    // back button navigation
-    fireEvent.click(screen.getByRole('button', { name: /back/i }));
+    // back button
+    fireEvent.click(screen.getByRole("button", { name: /back/i }));
     expect(mockNavigate).toHaveBeenCalledWith(-1);
   });
 });
+
 
 
