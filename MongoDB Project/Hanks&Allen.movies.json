@@ -1,0 +1,1221 @@
+// {$and:[{ cast:'Tom Hanks', cast:'Tim Allen'}] }
+
+[{
+  "_id": {
+    "$oid": "573a1399f29313caabceeab9"
+  },
+  "fullplot": "Divorcee Scott Calvin is disgusted to learn that his ex and her husband have tried - and failed - to break it easy to their 6-year-old son Charlie that Santa isn't real. On Christmas Eve, Scott reads The Night Before Christmas... then receives an unexpected visitor on his roof. When he's startled by Scott's calling out and falls, the Santa impersonator disappears, leaving only an 8-reindeer sleigh and a suit with instructions to put it on if he's involved in an accident. Scott does, and is transported around the town dropping gifts through chimneys until he's taken to the North Pole and informed by a group who claim they're elves that he is now Santa. Charlie is proud of his dad's new job, though Scott's convinced it's a dream. Until his hair turns white, his beard refuses to stay shaved, he gains weight inexplicably, even for his sudden love of junk food... Now he's accepted it, there's just one problem: how to keep it secret from his disbelieving family?",
+  "imdb": {
+    "rating": 6.3,
+    "votes": 57430,
+    "id": 111070
+  },
+  "year": 1994,
+  "plot": "When a man inadvertantly kills Santa on Christmas Eve, he finds himself magically recruited to take his place.",
+  "genres": [
+    "Comedy",
+    "Drama",
+    "Family"
+  ],
+  "rated": "PG",
+  "metacritic": 57,
+  "title": "The Santa Clause",
+  "lastupdated": "2015-08-19 00:02:48.953000000",
+  "languages": [
+    "English",
+    "Spanish"
+  ],
+  "writers": [
+    "Leo Benvenuti",
+    "Steve Rudnick"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.1,
+      "numReviews": 368429,
+      "meter": 64
+    },
+    "dvd": {
+      "$date": "1998-10-13T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 6,
+      "numReviews": 52,
+      "meter": 75
+    },
+    "lastUpdated": {
+      "$date": "2015-09-12T17:55:09.000Z"
+    },
+    "consensus": "The Santa Clause is utterly undemanding, but it's firmly rooted in the sort of good old-fashioned holiday spirit missing from too many modern yuletide films.",
+    "rotten": 13,
+    "production": "Buena Vista Distribution Compa",
+    "fresh": 39
+  },
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTZlNzk1MjItYjJlYy00MTAxLWJkNjEtZmNiNmVlNjQ4NDE5XkEyXkFqcGdeQXVyMzI0NDc4ODY@._V1_SY1000_SX677_AL_.jpg",
+  "num_mflix_comments": 0,
+  "released": {
+    "$date": "1994-11-11T00:00:00.000Z"
+  },
+  "awards": {
+    "wins": 2,
+    "nominations": 7,
+    "text": "2 wins & 7 nominations."
+  },
+  "countries": [
+    "USA"
+  ],
+  "cast": [
+    "Tim Allen",
+    "Judge Reinhold",
+    "Wendy Crewson",
+    "Eric Lloyd"
+  ],
+  "directors": [
+    "John Pasquin"
+  ],
+  "runtime": 97
+},
+{
+  "_id": {
+    "$oid": "573a139af29313caabcef887"
+  },
+  "fullplot": "A little boy named Andy loves to be in his room, playing with his toys, especially his doll named \"Woody\". But, what do the toys do when Andy is not with them, they come to life. Woody believes that he has life (as a toy) good. However, he must worry about Andy's family moving, and what Woody does not know is about Andy's birthday party. Woody does not realize that Andy's mother gave him an action figure known as Buzz Lightyear, who does not believe that he is a toy, and quickly becomes Andy's new favorite toy. Woody, who is now consumed with jealousy, tries to get rid of Buzz. Then, both Woody and Buzz are now lost. They must find a way to get back to Andy before he moves without them, but they will have to pass through a ruthless toy killer, Sid Phillips.",
+  "imdb": {
+    "rating": 8.3,
+    "votes": 542659,
+    "id": 114709
+  },
+  "year": 1995,
+  "plot": "A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room.",
+  "genres": [
+    "Animation",
+    "Adventure",
+    "Comedy"
+  ],
+  "rated": "G",
+  "metacritic": 92,
+  "title": "Toy Story",
+  "lastupdated": "2015-08-31 00:06:17.687000000",
+  "languages": [
+    "English"
+  ],
+  "writers": [
+    "John Lasseter (original story by)",
+    "Pete Docter (original story by)",
+    "Andrew Stanton (original story by)",
+    "Joe Ranft (original story by)",
+    "Joss Whedon (screenplay)",
+    "Andrew Stanton (screenplay)",
+    "Joel Cohen (screenplay)",
+    "Alec Sokolow (screenplay)"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.disney.com/ToyStory",
+    "viewer": {
+      "rating": 3.7,
+      "numReviews": 1103788,
+      "meter": 92
+    },
+    "dvd": {
+      "$date": "2001-03-20T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 9,
+      "numReviews": 78,
+      "meter": 100
+    },
+    "lastUpdated": {
+      "$date": "2015-09-12T18:12:39.000Z"
+    },
+    "consensus": "Entertaining as it is innovative, Toy Story reinvigorated animation while heralding the arrival of Pixar as a family-friendly force to be reckoned with.",
+    "rotten": 0,
+    "production": "Buena Vista",
+    "fresh": 78
+  },
+  "poster": "https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_SY1000_SX677_AL_.jpg",
+  "num_mflix_comments": 131,
+  "released": {
+    "$date": "1995-11-22T00:00:00.000Z"
+  },
+  "awards": {
+    "wins": 26,
+    "nominations": 14,
+    "text": "Nominated for 3 Oscars. Another 23 wins & 14 nominations."
+  },
+  "countries": [
+    "USA"
+  ],
+  "cast": [
+    "Tom Hanks",
+    "Tim Allen",
+    "Don Rickles",
+    "Jim Varney"
+  ],
+  "directors": [
+    "John Lasseter"
+  ],
+  "runtime": 81
+},
+{
+  "_id": {
+    "$oid": "573a139af29313caabcf0a33"
+  },
+  "plot": "A New Yorker suddenly learns he has a thirteen-year-old son who's been raised in the jungle. He brings the boy to New York city, and that's where the fun starts.",
+  "genres": [
+    "Comedy",
+    "Family"
+  ],
+  "runtime": 105,
+  "rated": "PG",
+  "cast": [
+    "Tim Allen",
+    "Martin Short",
+    "JoBeth Williams",
+    "Lolita Davidovich"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BM2Q4MjNjNmYtOGYyZS00OGUzLWI4OTQtZjI0NmFiZTUyZDAwXkEyXkFqcGdeQXVyNTUyMzE4Mzg@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Jungle 2 Jungle",
+  "fullplot": "A New York commodities broker who was married several years ago has been separated from his wife. Now he wants to marry his new girlfriend, so he has to divorce her first. So he goes to Venezuela, and is brought deep into the jungle and told that when they separated she was pregnant and chose not to tell him since he stated he was not really interested in becoming a father. Today, the boy has reached the age where he has to go on a quest, in New York, so his father reluctantly brings him along, and a culture clash follows. The boy has spent all of his life with the tribe he grew up with, and his father has a bit of problem so he can't spent as much as time with his son as his son likes.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1997-03-07T00:00:00.000Z"
+  },
+  "directors": [
+    "John Pasquin"
+  ],
+  "writers": [
+    "Hervè Palud (earlier screenplay Un indien dans la ville)",
+    "Thierry Lhermitte (earlier screenplay Un indien dans la ville)",
+    "Igor Aptekman (earlier screenplay Un indien dans la ville)",
+    "Philippe Bruneau (earlier screenplay Un indien dans la ville)",
+    "Bruce A. Evans (screenplay)",
+    "Raynold Gideon (screenplay)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 3,
+    "text": "3 nominations."
+  },
+  "lastupdated": "2015-08-08 01:21:35.617000000",
+  "year": 1997,
+  "imdb": {
+    "rating": 5,
+    "votes": 16800,
+    "id": 119432
+  },
+  "countries": [
+    "USA",
+    "France"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2.6,
+      "numReviews": 193850,
+      "meter": 33
+    },
+    "dvd": {
+      "$date": "2002-10-08T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 4,
+      "numReviews": 41,
+      "meter": 20
+    },
+    "lastUpdated": {
+      "$date": "2015-09-02T19:22:32.000Z"
+    },
+    "rotten": 33,
+    "production": "Walt Disney Productions",
+    "fresh": 8
+  }
+},
+{
+  "_id": {
+    "$oid": "573a139af29313caabcf0d8b"
+  },
+  "fullplot": "While Andy is away at summer camp Woody has been toynapped by Al McWiggin, a greedy collector and proprietor of \"Al's Toy Barn\"! In this all-out rescue mission, Buzz and his friends Mr. Potato Head, Slinky Dog, Rex and Hamm springs into action to rescue Woody from winding up as a museum piece. They must find a way to save him before he gets sold in Japan forever and they'll never see him again!",
+  "imdb": {
+    "rating": 7.9,
+    "votes": 346655,
+    "id": 120363
+  },
+  "year": 1999,
+  "plot": "When Woody is stolen by a toy collector, Buzz and his friends vow to rescue him, but Woody finds the idea of immortality in a museum tempting.",
+  "genres": [
+    "Animation",
+    "Adventure",
+    "Comedy"
+  ],
+  "rated": "G",
+  "metacritic": 88,
+  "title": "Toy Story 2",
+  "lastupdated": "2015-09-07 00:06:19.897000000",
+  "languages": [
+    "English",
+    "Arabic",
+    "Spanish"
+  ],
+  "writers": [
+    "John Lasseter (original story by)",
+    "Pete Docter (original story by)",
+    "Ash Brannon (original story by)",
+    "Andrew Stanton (original story by)",
+    "Andrew Stanton (screenplay)",
+    "Rita Hsiao (screenplay)",
+    "Doug Chamberlin (screenplay)",
+    "Chris Webb (screenplay)"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://disney.go.com/toystory/",
+    "viewer": {
+      "rating": 3.5,
+      "numReviews": 994797,
+      "meter": 86
+    },
+    "dvd": {
+      "$date": "2000-10-17T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 8.6,
+      "numReviews": 163,
+      "meter": 100
+    },
+    "lastUpdated": {
+      "$date": "2015-09-12T18:02:14.000Z"
+    },
+    "consensus": "The rare sequel that arguably improves on its predecessor, Toy Story 2 uses inventive storytelling, gorgeous animation, and a talented cast to deliver another rich moviegoing experience for all ages.",
+    "rotten": 0,
+    "production": "Buena Vista Pictures",
+    "fresh": 163
+  },
+  "poster": "https://m.media-amazon.com/images/M/MV5BMWM5ZDcxMTYtNTEyNS00MDRkLWI3YTItNThmMGExMWY4NDIwXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SY1000_SX677_AL_.jpg",
+  "num_mflix_comments": 150,
+  "released": {
+    "$date": "1999-11-24T00:00:00.000Z"
+  },
+  "awards": {
+    "wins": 22,
+    "nominations": 24,
+    "text": "Nominated for 1 Oscar. Another 21 wins & 24 nominations."
+  },
+  "countries": [
+    "USA"
+  ],
+  "cast": [
+    "Tom Hanks",
+    "Tim Allen",
+    "Joan Cusack",
+    "Kelsey Grammer"
+  ],
+  "directors": [
+    "John Lasseter",
+    "Ash Brannon",
+    "Lee Unkrich"
+  ],
+  "runtime": 92
+},
+{
+  "_id": {
+    "$oid": "573a139ef29313caabcfe547"
+  },
+  "fullplot": "The sci-fi television series \"Galaxy Quest\", which took place aboard the intergalactic spaceship NSEA Protector, starred Jason Nesmith as suave Commander Peter Quincy Taggert, Gwen DeMarco as sexy communications person Lt. Tawny Madison (a role which consisted solely of repeating what the computer stated, much to Gwen's annoyance), Shakespearean trained Sir Alexander Dane as alien Dr. Lazarus, Fred Kwan as engineer Tech Sgt. Chen, and Tommy Webber as child gunner Laredo. Eighteen years after the series last aired, it lives on in the hearts of its rabid fans. However, it lives on in infamy for its stars, who have not been able to find meaningful acting work since. Their current lives revolve around cashing in on however those roles will afford, which usually entails attending fan conventions or worse, such as shopping mall openings. Only Jason seems to relish his lot in life, until he finds out that his co-stars detest him because of his superior attitude as \"the Commander\", and much of the public considers him a laughing stock. Their lives change when Jason is approached by who he thinks are convention fans asking for help. They are in reality an alien race called Thermians, led by Mathesar, who have modeled their existence after the series, which they believe to be real. When Jason and then the rest of his co-stars (along with Guy Fleegman, who was killed off before the opening credits in only one episode) go along with the Thermians, Jason's co-stars who believe they are off to yet another paying gig, they learn that they have to portray their roles for real. Without screenwriters to get them to a happy and heroic ending, they have to trust that their play acting will work, especially in dealing with the Thermian's nemesis, General Sarris. Guy in particular fears that he will go the way his character did on the series. But when they run across technical issues that they as actors didn't care anything about during the filming of the series and thus now don't know how to deal with, they need to find someone who should know what to do.",
+  "imdb": {
+    "rating": 7.3,
+    "votes": 114358,
+    "id": 177789
+  },
+  "year": 1999,
+  "plot": "The alumni cast of a space opera television series have to play their roles as the real thing when an alien race needs their help.",
+  "genres": [
+    "Adventure",
+    "Comedy",
+    "Sci-Fi"
+  ],
+  "rated": "PG",
+  "metacritic": 70,
+  "title": "Galaxy Quest",
+  "lastupdated": "2015-09-10 17:44:56.760000000",
+  "languages": [
+    "English"
+  ],
+  "writers": [
+    "David Howard (story)",
+    "David Howard (screenplay)",
+    "Robert Gordon (screenplay)"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.amazon.com/exec/obidos/subst/video/misc/dreamworks/galaxy-quest/gq-home.html/103-6831095-1845408",
+    "viewer": {
+      "rating": 3.1,
+      "numReviews": 222626,
+      "meter": 78
+    },
+    "dvd": {
+      "$date": "2000-05-02T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 7.2,
+      "numReviews": 115,
+      "meter": 90
+    },
+    "lastUpdated": {
+      "$date": "2015-09-10T17:44:58.000Z"
+    },
+    "consensus": "Intelligent and humorous satire with an excellent cast -- no previous Trekkie knowledge needed to enjoy this one.",
+    "rotten": 12,
+    "production": "DreamWorks SKG",
+    "fresh": 103
+  },
+  "poster": "https://m.media-amazon.com/images/M/MV5BNmZlNTY5YjQtZTU5ZC00MzcyLWI1NDMtNjA0ZjQxMmQwYjJmL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SY1000_SX677_AL_.jpg",
+  "num_mflix_comments": 0,
+  "released": {
+    "$date": "1999-12-25T00:00:00.000Z"
+  },
+  "awards": {
+    "wins": 7,
+    "nominations": 14,
+    "text": "7 wins & 14 nominations."
+  },
+  "countries": [
+    "USA"
+  ],
+  "cast": [
+    "Tim Allen",
+    "Sigourney Weaver",
+    "Alan Rickman",
+    "Tony Shalhoub"
+  ],
+  "directors": [
+    "Dean Parisot"
+  ],
+  "runtime": 102
+},
+{
+  "_id": {
+    "$oid": "573a13a3f29313caabd0e77c"
+  },
+  "plot": "Cletis Tout is a comedy about mistaken identities, a hit man who sees everything in terms of the movies and a twenty year old diamond heist.",
+  "genres": [
+    "Comedy",
+    "Crime"
+  ],
+  "runtime": 92,
+  "metacritic": 36,
+  "rated": "R",
+  "cast": [
+    "Christian Slater",
+    "Tim Allen",
+    "Portia de Rossi",
+    "Richard Dreyfuss"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTUyMjYwNTA5OV5BMl5BanBnXkFtZTcwODk4OTMyMQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Who Is Cletis Tout?",
+  "fullplot": "Cletis Tout is a comedy about mistaken identities, a hit man who sees everything in terms of the movies and a twenty year old diamond heist.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2001-12-21T00:00:00.000Z"
+  },
+  "directors": [
+    "Chris Ver Wiel"
+  ],
+  "writers": [
+    "Chris Ver Wiel"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "2 nominations."
+  },
+  "lastupdated": "2015-08-16 01:08:40.013000000",
+  "year": 2001,
+  "imdb": {
+    "rating": 6.4,
+    "votes": 3462,
+    "id": 246500
+  },
+  "countries": [
+    "USA",
+    "Canada"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.paramountclassics.com/cletistout",
+    "viewer": {
+      "rating": 3.1,
+      "numReviews": 2373,
+      "meter": 52
+    },
+    "dvd": {
+      "$date": "2003-01-07T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 4.3,
+      "numReviews": 56,
+      "meter": 23
+    },
+    "boxOffice": "$64.9k",
+    "consensus": "Cliched and endlessly self-referential, Who Is Cletis Tout? doesn't add anything original to the crime genre.",
+    "rotten": 43,
+    "production": "Paramount Classics",
+    "lastUpdated": {
+      "$date": "2015-08-19T18:49:48.000Z"
+    },
+    "fresh": 13
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13a6f29313caabd16582"
+  },
+  "fullplot": "When underappreciated video specialist Joe Scheffer is brutally humiliated by the office bully Mark McKinney in front of his daughter, Joe begins a quest for personal redemption. He proceeds by enduring a personal make-over and takes martial arts lessons from a B-action star. As news spreads of his rematch with Mark, Joe suddenly finds himself the center of attention, ascending the corporate ladder and growing in popularity. He's determined to show everyone in his life that he is not a nobody, but a force to be reckoned with.",
+  "imdb": {
+    "rating": 5.4,
+    "votes": 8051,
+    "id": 279889
+  },
+  "year": 2001,
+  "plot": "When Joe is beat up by a co-worker in front of his daughter on \"Bring Your Child To Work Day\", he decides to fight back.",
+  "genres": [
+    "Comedy",
+    "Drama"
+  ],
+  "rated": "PG",
+  "metacritic": 42,
+  "title": "Joe Somebody",
+  "lastupdated": "2015-08-15 00:14:36.973000000",
+  "languages": [
+    "English"
+  ],
+  "writers": [
+    "John Scott Shepherd"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.lot47.com/somebody",
+    "viewer": {
+      "rating": 2.5,
+      "numReviews": 41,
+      "meter": 0
+    },
+    "critic": {
+      "rating": 4.5,
+      "numReviews": 30,
+      "meter": 40
+    },
+    "lastUpdated": {
+      "$date": "2015-08-19T18:53:09.000Z"
+    },
+    "rotten": 18,
+    "production": "Lot 47 Films",
+    "fresh": 12
+  },
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTI0NjExNzg2MF5BMl5BanBnXkFtZTYwNjQxMzU3._V1_SY1000_SX677_AL_.jpg",
+  "num_mflix_comments": 0,
+  "released": {
+    "$date": "2001-12-21T00:00:00.000Z"
+  },
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "countries": [
+    "USA"
+  ],
+  "cast": [
+    "Tim Allen",
+    "Julie Bowen",
+    "Kelly Lynch",
+    "Greg Germann"
+  ],
+  "directors": [
+    "John Pasquin"
+  ],
+  "runtime": 98
+},
+{
+  "_id": {
+    "$oid": "573a13a7f29313caabd1c2a5"
+  },
+  "fullplot": "Scott Calvin has been Santa Claus for the past eight years, and his loyal elves consider him the best Santa ever. But Santa's got problems (he's even mysteriously losing weight) and things quickly go south when he finds out that his son, Charlie, has landed on this year's \"naughty\" list. Desperate to help his son, Scott heads back home, leaving a substitute Claus to watch over things at the Pole. But when the substitute institutes some strange redefinitions of naughty and nice, putting Christmas at risk, it's up to Scott to return with a new bag of magic to try to save Christmas.",
+  "imdb": {
+    "rating": 5.5,
+    "votes": 31007,
+    "id": 304669
+  },
+  "year": 2002,
+  "plot": "Scott Calvin has been a humble Santa Claus for nearly ten years, but it might come to an end if he doesn't find a Mrs. Claus.",
+  "genres": [
+    "Comedy",
+    "Family",
+    "Fantasy"
+  ],
+  "rated": "G",
+  "metacritic": 48,
+  "title": "The Santa Clause 2",
+  "lastupdated": "2015-09-01 00:54:08.897000000",
+  "languages": [
+    "English"
+  ],
+  "writers": [
+    "Don Rhymer (screenplay)",
+    "Cinco Paul (screenplay)",
+    "Ken Daurio (screenplay)",
+    "Ed Decter (screenplay)",
+    "John J. Strauss (screenplay)",
+    "Leo Benvenuti (characters)",
+    "Steve Rudnick (characters)",
+    "Leo Benvenuti (story)",
+    "Steve Rudnick (story)"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://disney.go.com/disneypictures/santaclause2/index.html",
+    "viewer": {
+      "rating": 2.9,
+      "numReviews": 202011,
+      "meter": 42
+    },
+    "dvd": {
+      "$date": "2003-11-18T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 5.6,
+      "numReviews": 113,
+      "meter": 55
+    },
+    "boxOffice": "$139.2M",
+    "consensus": "Though it's harmless as family entertainment and has moments of charm, The Santa Clause 2 is also predictable and forgettable.",
+    "rotten": 51,
+    "production": "Buena Vista Pictures",
+    "lastUpdated": {
+      "$date": "2015-09-13T09:57:37.000Z"
+    },
+    "fresh": 62
+  },
+  "poster": "https://m.media-amazon.com/images/M/MV5BNjU0Njk5MTA2Nl5BMl5BanBnXkFtZTYwODkzMzQ3._V1_SY1000_SX677_AL_.jpg",
+  "num_mflix_comments": 2,
+  "released": {
+    "$date": "2002-11-01T00:00:00.000Z"
+  },
+  "awards": {
+    "wins": 1,
+    "nominations": 3,
+    "text": "1 win & 3 nominations."
+  },
+  "countries": [
+    "USA"
+  ],
+  "cast": [
+    "Tim Allen",
+    "Elizabeth Mitchell",
+    "David Krumholtz",
+    "Eric Lloyd"
+  ],
+  "directors": [
+    "Michael Lembeck"
+  ],
+  "runtime": 104
+},
+{
+  "_id": {
+    "$oid": "573a13aef29313caabd2ea34"
+  },
+  "plot": "Former superhero Jack is called back to work to transform an unlikely group of ragtag kids into superheroes at a private Academy.",
+  "genres": [
+    "Action",
+    "Adventure",
+    "Family"
+  ],
+  "runtime": 83,
+  "metacritic": 26,
+  "rated": "PG",
+  "cast": [
+    "Tim Allen",
+    "Courteney Cox",
+    "Chevy Chase",
+    "Spencer Breslin"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTM0NjczMzUyM15BMl5BanBnXkFtZTcwMDEwMjQzMQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Zoom",
+  "fullplot": "Former superhero Jack Shepard, (also known as Captain Zoom), is called back to work to transform an unlikely group of ragtag kids into a new generation of superheroes at a privacy Academy and save the world from certain destruction. The project holds an audition of would-be members, most of whom possess useless or disgusting powers. In the end, Dylan, a 17-year-old boy who can turn invisible Summer, a 16-year-old girl with telekinetic powers Tucker, a 12-year-old boy with the power to enlarge any part of his body Cindy, a 6-year-old girl with super strength.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2006-08-11T00:00:00.000Z"
+  },
+  "directors": [
+    "Peter Hewitt"
+  ],
+  "writers": [
+    "Adam Rifkin (screenplay)",
+    "David Berenbaum (screenplay)",
+    "Adam Rifkin (screen story)",
+    "Jason Lethcoe (novel)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 3,
+    "text": "3 nominations."
+  },
+  "lastupdated": "2015-09-11 00:08:47.830000000",
+  "year": 2006,
+  "imdb": {
+    "rating": 4.2,
+    "votes": 13951,
+    "id": 383060
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13aff29313caabd2fe53"
+  },
+  "plot": "With their daughter away, the Kranks decide to skip Christmas altogether until she decides to come home, causing an uproar when they have to celebrate the holiday at the last minute.",
+  "genres": [
+    "Comedy",
+    "Family"
+  ],
+  "runtime": 99,
+  "metacritic": 22,
+  "rated": "PG",
+  "cast": [
+    "Tim Allen",
+    "Jamie Lee Curtis",
+    "Dan Aykroyd",
+    "M. Emmet Walsh"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTQxMDMxODEwNF5BMl5BanBnXkFtZTYwNzM4OTc2._V1_SY1000_SX677_AL_.jpg",
+  "title": "Christmas with the Kranks",
+  "fullplot": "Luther Krank is fed up with the commerciality of Christmas; he decides to skip the holiday and go on a vacation with his wife instead. But when his daughter decides at the last minute to come home, he must put together a holiday celebration.",
+  "languages": [
+    "English",
+    "Spanish"
+  ],
+  "released": {
+    "$date": "2004-11-24T00:00:00.000Z"
+  },
+  "directors": [
+    "Joe Roth"
+  ],
+  "writers": [
+    "John Grisham (novel)",
+    "Chris Columbus (screenplay)"
+  ],
+  "awards": {
+    "wins": 2,
+    "nominations": 1,
+    "text": "2 wins & 1 nomination."
+  },
+  "lastupdated": "2015-08-28 00:39:18.207000000",
+  "year": 2004,
+  "imdb": {
+    "rating": 5.2,
+    "votes": 24187,
+    "id": 388419
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie"
+},
+{
+  "_id": {
+    "$oid": "573a13aff29313caabd31299"
+  },
+  "plot": "A man tries to live a normal life despite the fact that he sometimes turns into a sheepdog.",
+  "genres": [
+    "Comedy",
+    "Family",
+    "Fantasy"
+  ],
+  "runtime": 98,
+  "metacritic": 43,
+  "rated": "PG",
+  "cast": [
+    "Tim Allen",
+    "Kristin Davis",
+    "Zena Grey",
+    "Spencer Breslin"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTY0NzM0OTE1N15BMl5BanBnXkFtZTcwMjQ0NjIzMQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "The Shaggy Dog",
+  "fullplot": "A man tries to live a normal life despite the fact that he sometimes turns into a sheepdog.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2006-03-10T00:00:00.000Z"
+  },
+  "directors": [
+    "Brian Robbins"
+  ],
+  "writers": [
+    "Cormac Wibberley (screenplay)",
+    "Marianne Wibberley (screenplay)",
+    "Geoff Rodkey (screenplay)",
+    "Jack Amiel (screenplay)",
+    "Michael Begler (screenplay)",
+    "Bill Walsh (earlier screenplay \"The Shaggy Dog\")",
+    "Lillie Hayward (earlier screenplay \"The Shaggy Dog\")",
+    "Don Tait (earlier screenplay \"The Shaggy D.A.\")"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 4,
+    "text": "4 nominations."
+  },
+  "lastupdated": "2015-09-15 04:22:15.310000000",
+  "year": 2006,
+  "imdb": {
+    "rating": 4.4,
+    "votes": 14064,
+    "id": 393735
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13b2f29313caabd3ac0d"
+  },
+  "plot": "The toys are mistakenly delivered to a day-care center instead of the attic right before Andy leaves for college, and it's up to Woody to convince the other toys that they weren't abandoned and to return home.",
+  "genres": [
+    "Animation",
+    "Adventure",
+    "Comedy"
+  ],
+  "runtime": 103,
+  "metacritic": 92,
+  "rated": "G",
+  "cast": [
+    "Tom Hanks",
+    "Tim Allen",
+    "Joan Cusack",
+    "Ned Beatty"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTgxOTY4Mjc0MF5BMl5BanBnXkFtZTcwNTA4MDQyMw@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Toy Story 3",
+  "fullplot": "Woody, Buzz and the whole gang are back. As their owner Andy prepares to depart for college, his loyal toys find themselves in daycare where untamed tots with their sticky little fingers do not play nice. So, it's all for one and one for all as they join Barbie's counterpart Ken, a thespian hedgehog named Mr. Pricklepants and a pink, strawberry-scented teddy bear called Lots-o'-Huggin' Bear to plan their great escape.",
+  "languages": [
+    "English",
+    "Spanish"
+  ],
+  "released": {
+    "$date": "2010-06-18T00:00:00.000Z"
+  },
+  "directors": [
+    "Lee Unkrich"
+  ],
+  "writers": [
+    "John Lasseter (story)",
+    "Andrew Stanton (story)",
+    "Lee Unkrich (story)",
+    "Michael Arndt (screenplay)"
+  ],
+  "awards": {
+    "wins": 63,
+    "nominations": 81,
+    "text": "Won 2 Oscars. Another 61 wins & 81 nominations."
+  },
+  "lastupdated": "2015-08-22 00:01:13.297000000",
+  "year": 2010,
+  "imdb": {
+    "rating": 8.4,
+    "votes": 474122,
+    "id": 435761
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.disney.com/ToyStory",
+    "viewer": {
+      "rating": 4.3,
+      "numReviews": 601167,
+      "meter": 89
+    },
+    "dvd": {
+      "$date": "2010-11-02T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 8.9,
+      "numReviews": 287,
+      "meter": 99
+    },
+    "boxOffice": "$415.0M",
+    "consensus": "Deftly blending comedy, adventure, and honest emotion, Toy Story 3 is a rare second sequel that really works.",
+    "rotten": 4,
+    "production": "Walt Disney Pictures",
+    "lastUpdated": {
+      "$date": "2015-09-12T18:04:37.000Z"
+    },
+    "fresh": 283
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13b3f29313caabd3ebd3"
+  },
+  "fullplot": "Now that Santa/Scott Calvin and Mrs. Claus/Carol Calvin have the North Pole running smoothly, the Counsel of Legendary Figures has called an emergency meeting on Christmas Eve! The evil Jack Frost has been making trouble, looking to take over the holiday! So he launches a plan to sabotage the toy factory and compel Scott to invoke the little-known Escape Clause and wish he'd never become Santa!",
+  "imdb": {
+    "rating": 4.6,
+    "votes": 19043,
+    "id": 452681
+  },
+  "year": 2006,
+  "plot": "Santa, aka Scott Calvin, is faced with double-duty: how to keep his new family happy, and how to stop Jack Frost from taking over Christmas.",
+  "genres": [
+    "Adventure",
+    "Comedy",
+    "Family"
+  ],
+  "rated": "G",
+  "metacritic": 32,
+  "title": "The Santa Clause 3: The Escape Clause",
+  "lastupdated": "2015-09-05 00:28:21.220000000",
+  "languages": [
+    "English"
+  ],
+  "writers": [
+    "Ed Decter",
+    "John J. Strauss",
+    "Leo Benvenuti (characters)",
+    "Steve Rudnick (characters)"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.santaclause3.com",
+    "viewer": {
+      "rating": 3.1,
+      "numReviews": 150396,
+      "meter": 40
+    },
+    "dvd": {
+      "$date": "2007-11-20T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 3.7,
+      "numReviews": 65,
+      "meter": 15
+    },
+    "boxOffice": "$84.4M",
+    "consensus": "Playing Jack Frost as an evil cross between Liza Minnelli and Liberace, Martin Short is a welcome presence, but this tired series continues drawing from its bag of bland gags and dumb slapstick.",
+    "rotten": 55,
+    "production": "Buena Vista",
+    "lastUpdated": {
+      "$date": "2015-08-16T18:40:04.000Z"
+    },
+    "fresh": 10
+  },
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTI4ODQ4MzgzMl5BMl5BanBnXkFtZTcwODc5NTUzMQ@@._V1_SY1000_SX677_AL_.jpg",
+  "num_mflix_comments": 1,
+  "released": {
+    "$date": "2006-11-03T00:00:00.000Z"
+  },
+  "awards": {
+    "wins": 1,
+    "nominations": 6,
+    "text": "1 win & 6 nominations."
+  },
+  "countries": [
+    "USA"
+  ],
+  "cast": [
+    "Tim Allen",
+    "Elizabeth Mitchell",
+    "Eric Lloyd",
+    "Judge Reinhold"
+  ],
+  "directors": [
+    "Michael Lembeck"
+  ],
+  "runtime": 97
+},
+{
+  "_id": {
+    "$oid": "573a13b6f29313caabd46bed"
+  },
+  "plot": "A group of suburban biker wannabes looking for adventure hit the open road, but get more than they bargained for when they encounter a New Mexico gang called the Del Fuegos.",
+  "genres": [
+    "Action",
+    "Adventure",
+    "Comedy"
+  ],
+  "runtime": 100,
+  "metacritic": 27,
+  "rated": "PG-13",
+  "cast": [
+    "Tim Allen",
+    "John Travolta",
+    "Martin Lawrence",
+    "William H. Macy"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BZWZlMzQ5NmItNjBmMS00NDgyLThiNDYtZWU2MzA3YjZmOGU5XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Wild Hogs",
+  "fullplot": "Four middle-aged men decide to take a road trip from Cincinnati to the Pacific in order to get away from their lives which are leading them nowhere. Taking their motorcycles, these \"Wild Hogs\" tear up the road and eventually stop in New Mexico for a drink not knowing that the bar belongs to the \"Del Fuegos\", a mean biker gang. When the Del Fuegos steal a bike that belongs to the Wild Hogs, the four men form a plan to steal their bike back.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2007-03-02T00:00:00.000Z"
+  },
+  "directors": [
+    "Walt Becker"
+  ],
+  "writers": [
+    "Brad Copeland"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 3,
+    "text": "3 nominations."
+  },
+  "lastupdated": "2015-08-25 00:11:00.667000000",
+  "year": 2007,
+  "imdb": {
+    "rating": 5.9,
+    "votes": 94699,
+    "id": 486946
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://wildhogs.movies.go.com/",
+    "viewer": {
+      "rating": 3.3,
+      "numReviews": 395302,
+      "meter": 62
+    },
+    "dvd": {
+      "$date": "2007-08-14T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 3.8,
+      "numReviews": 140,
+      "meter": 14
+    },
+    "boxOffice": "$168.2M",
+    "consensus": "Wild Hogs is a dreadful combination of fish-out-of-water jokes, slapstick, and lazy stereotypes.",
+    "rotten": 120,
+    "production": "Buena Vista",
+    "lastUpdated": {
+      "$date": "2015-09-12T19:33:37.000Z"
+    },
+    "fresh": 20
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13c1f29313caabd65436"
+  },
+  "fullplot": "Oscar, a baby chimpanzee is enjoying his life with his mother in the jungles along the Ivory Coast. Without warning, young Oscar is tragically orphaned during an attack from a rival group of chimpanzees. Afterwards, he attempts to survive on his own, and to be accepted by the other chimps. But Oscar struggles, until he is surprisingly adopted by the Alpha Male of his group.",
+  "imdb": {
+    "rating": 7.2,
+    "votes": 4599,
+    "id": 1222815
+  },
+  "year": 2012,
+  "plot": "A 3-months-old chimpanzee is separated from his troop and is then adopted by a fully-grown male.",
+  "genres": [
+    "Documentary"
+  ],
+  "rated": "G",
+  "metacritic": 57,
+  "title": "Chimpanzee",
+  "lastupdated": "2015-09-02 00:28:18.397000000",
+  "languages": [
+    "English"
+  ],
+  "writers": [
+    "Alastair Fothergill (original concept)",
+    "Mark Linfield (original concept)",
+    "Mark Linfield",
+    "Alastair Fothergill",
+    "Don Hahn"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 4,
+      "numReviews": 158,
+      "meter": 80
+    },
+    "website": "http://www.disney.com/wingsoflife",
+    "lastUpdated": {
+      "$date": "2015-08-19T18:13:05.000Z"
+    }
+  },
+  "poster": "https://m.media-amazon.com/images/M/MV5BMjA1MjMzMjA3OV5BMl5BanBnXkFtZTcwOTU3NDU5Ng@@._V1_SY1000_SX677_AL_.jpg",
+  "num_mflix_comments": 0,
+  "released": {
+    "$date": "2012-04-20T00:00:00.000Z"
+  },
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "2 nominations."
+  },
+  "countries": [
+    "Tanzania",
+    "USA"
+  ],
+  "cast": [
+    "Tim Allen"
+  ],
+  "directors": [
+    "Alastair Fothergill",
+    "Mark Linfield"
+  ],
+  "runtime": 78
+},
+{
+  "_id": {
+    "$oid": "573a13ddf29313caabdb4773"
+  },
+  "plot": "Woody and the gang are held up at a roadside motel and members of the group start to disappear from everywhere. Woody and set about getting to the bottom of the mystery.",
+  "genres": [
+    "Animation",
+    "Short",
+    "Adventure"
+  ],
+  "runtime": 22,
+  "rated": "TV-G",
+  "cast": [
+    "Tom Hanks",
+    "Tim Allen",
+    "Joan Cusack",
+    "Carl Weathers"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BYTZkY2JjMDItYzEwMS00MjVlLTlhYjktMmI5YjYzMjdmZGMxXkEyXkFqcGdeQXVyNDIwODAwNzg@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Toy Story of Terror",
+  "fullplot": "The toys go on a road trip, when an unexpected event leads them to a roadside motel, after one of the toys goes missing, the others find themselves caught up in a mysterious, monstrous, and terrifying sequence of events that must be solved before they all suffer the same fate",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2013-10-16T00:00:00.000Z"
+  },
+  "directors": [
+    "Angus MacLane"
+  ],
+  "writers": [
+    "Angus MacLane",
+    "Andrew Stanton (characters)",
+    "John Lasseter (characters)"
+  ],
+  "awards": {
+    "wins": 6,
+    "nominations": 10,
+    "text": "6 wins & 10 nominations."
+  },
+  "lastupdated": "2015-08-19 00:05:46.297000000",
+  "year": 2013,
+  "imdb": {
+    "rating": 7.6,
+    "votes": 7342,
+    "id": 2446040
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 4.1,
+      "numReviews": 2282,
+      "meter": 84
+    },
+    "dvd": {
+      "$date": "2014-08-19T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 8.6,
+      "numReviews": 13,
+      "meter": 92
+    },
+    "lastUpdated": {
+      "$date": "2015-09-10T19:43:40.000Z"
+    },
+    "rotten": 1,
+    "production": "Disney Pixar",
+    "fresh": 12
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13ecf29313caabdd2280"
+  },
+  "plot": "It's a post Christmas play date and the toys have to go up against the fearsome and aggressive new dino toys.",
+  "genres": [
+    "Animation",
+    "Short",
+    "Adventure"
+  ],
+  "runtime": 22,
+  "rated": "TV-G",
+  "cast": [
+    "Tom Hanks",
+    "Tim Allen",
+    "Kristen Schaal",
+    "Kevin McKidd"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BOTc2OTA1MDM4M15BMl5BanBnXkFtZTgwNjczMDk5MjE@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Toy Story That Time Forgot",
+  "fullplot": "The story takes place after a Christmas holiday with the regular toys finding themselves trapped in unusual territory with a group of new and delusional action figures. Together they must find their way back to their child's bedroom and to safety.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2014-12-02T00:00:00.000Z"
+  },
+  "directors": [
+    "Steve Purcell"
+  ],
+  "writers": [
+    "Steve Purcell"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 7,
+    "text": "7 nominations."
+  },
+  "lastupdated": "2015-08-20 00:16:11.313000000",
+  "year": 2014,
+  "imdb": {
+    "rating": 7.3,
+    "votes": 2931,
+    "id": 3473654
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "num_mflix_comments": 0
+}]
