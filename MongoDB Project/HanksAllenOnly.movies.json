@@ -1,7 +1,0 @@
-// db.getCollection('movies').find({
-//   cast: { $all: ['Tom Hanks', 'Tim Allen'] },
-//   $expr: { $eq: [{ $size: '$cast' }, 2] }
-// });
-
-
-// [] Does not exist
