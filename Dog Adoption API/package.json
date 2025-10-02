@@ -1,0 +1,40 @@
+{
+	"name": "dog-adoption-platform-api",
+	"version": "1.0.0",
+	"description": "Dog Adoption Platform API",
+	"main": "app.js",
+	"scripts": {
+        "dev": "nodemon server.js",
+         "start": "node server.js",
+         "test": "cross-env NODE_ENV=test MONGODB_URI=mongodb://127.0.0.1:27017/dog-adoption-test mocha \"tests/**/*.test.js\" --timeout 15000",
+		 "seed": "cross-env NODE_ENV=development node scripts/seed.js",
+         "seed:test": "cross-env NODE_ENV=test node scripts/seed.js"
+},
+
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"chai": "^6.2.0",
+		"cross-env": "^10.1.0",
+		"mocha": "^11.7.3",
+		"nodemon": "^3.1.10",
+		"supertest": "^7.1.4"
+	},
+	"directories": {
+		"test": "tests"
+	},
+	"keywords": [],
+	"type": "commonjs",
+	"dependencies": {
+		"bcrypt": "^6.0.0",
+		"cors": "^2.8.5",
+		"dotenv": "^17.2.2",
+		"express": "^5.1.0",
+		"express-rate-limit": "^8.1.0",
+		"helmet": "^8.1.0",
+		"jsonwebtoken": "^9.0.2",
+		"mongoose": "^8.18.2",
+		"morgan": "^1.10.1",
+		"zod": "^4.1.11"
+	}
+}
